@@ -5,6 +5,7 @@ Bundle-SymbolicName: com.risedev.myprocess
 Bundle-Version: 1.0.0.qualifier
 Require-Bundle: org.adempiere.base;bundle-version="10.0.0",
  org.adempiere.plugin.utils;bundle-version="10.0.0"
+Service-Component: AssetTransferProcess.xml
 Bundle-Vendor: RISEDEV
 Automatic-Module-Name: com.risedev.myprocess
 Bundle-RequiredExecutionEnvironment: JavaSE-11
