@@ -1,4 +1,4 @@
-package com.risedev.processes;
+package com.risedev.model;
 
 import java.util.Properties;
 

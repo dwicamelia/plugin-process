@@ -7,6 +7,8 @@ import org.compiere.process.SvrProcess;
 import org.compiere.util.AdempiereUserError;
 import org.compiere.util.Msg;
 
+import com.risedev.model.MREDAssetTransfer;
+
 public class AssetTransfer extends SvrProcess{
 	private int p_A_Asset_ID = 0;			// Asset
 	private int p_M_Locator_ID = 0;			// Current Locator Asset

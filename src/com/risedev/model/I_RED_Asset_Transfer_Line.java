@@ -14,25 +14,25 @@
  * ComPiere, Inc., 2620 Augustine Dr. #245, Santa Clara, CA 95054, USA        *
  * or via info@compiere.org or http://www.compiere.org/license.html           *
  *****************************************************************************/
-package com.risedev.processes;
+package com.risedev.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
 import org.compiere.model.*;
 import org.compiere.util.KeyNamePair;
 
-/** Generated Interface for RED_Asset_Transfer
+/** Generated Interface for RED_Asset_Transfer_Line
  *  @author iDempiere (generated) 
  *  @version Release 10
  */
 @SuppressWarnings("all")
-public interface I_RED_Asset_Transfer 
+public interface I_RED_Asset_Transfer_Line 
 {
 
-    /** TableName=RED_Asset_Transfer */
-    public static final String Table_Name = "RED_Asset_Transfer";
+    /** TableName=RED_Asset_Transfer_Line */
+    public static final String Table_Name = "RED_Asset_Transfer_Line";
 
-    /** AD_Table_ID=1000005 */
+    /** AD_Table_ID=1000006 */
     public static final int Table_ID = MTable.getTable_ID(Table_Name);
 
     KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
@@ -164,32 +164,6 @@ public interface I_RED_Asset_Transfer
 
 	public I_M_Locator getM_LocatorTo() throws RuntimeException;
 
-    /** Column name Name */
-    public static final String COLUMNNAME_Name = "Name";
-
-	/** Set Name.
-	  * Alphanumeric identifier of the entity
-	  */
-	public void setName (String Name);
-
-	/** Get Name.
-	  * Alphanumeric identifier of the entity
-	  */
-	public String getName();
-
-    /** Column name Processed */
-    public static final String COLUMNNAME_Processed = "Processed";
-
-	/** Set Processed.
-	  * The document has been processed
-	  */
-	public void setProcessed (boolean Processed);
-
-	/** Get Processed.
-	  * The document has been processed
-	  */
-	public boolean isProcessed();
-
     /** Column name RED_Asset_Transfer_ID */
     public static final String COLUMNNAME_RED_Asset_Transfer_ID = "RED_Asset_Transfer_ID";
 
@@ -199,14 +173,25 @@ public interface I_RED_Asset_Transfer
 	/** Get RED_Asset_Transfer_ID	  */
 	public int getRED_Asset_Transfer_ID();
 
-    /** Column name RED_Asset_Transfer_UU */
-    public static final String COLUMNNAME_RED_Asset_Transfer_UU = "RED_Asset_Transfer_UU";
+	public I_RED_Asset_Transfer getRED_Asset_Transfer() throws RuntimeException;
 
-	/** Set RED_Asset_Transfer_UU	  */
-	public void setRED_Asset_Transfer_UU (String RED_Asset_Transfer_UU);
+    /** Column name RED_Asset_Transfer_Line_ID */
+    public static final String COLUMNNAME_RED_Asset_Transfer_Line_ID = "RED_Asset_Transfer_Line_ID";
 
-	/** Get RED_Asset_Transfer_UU	  */
-	public String getRED_Asset_Transfer_UU();
+	/** Set RED_Asset_Transfer_Line_ID	  */
+	public void setRED_Asset_Transfer_Line_ID (int RED_Asset_Transfer_Line_ID);
+
+	/** Get RED_Asset_Transfer_Line_ID	  */
+	public int getRED_Asset_Transfer_Line_ID();
+
+    /** Column name RED_Asset_Transfer_Line_UU */
+    public static final String COLUMNNAME_RED_Asset_Transfer_Line_UU = "RED_Asset_Transfer_Line_UU";
+
+	/** Set RED_Asset_Transfer_Line_UU	  */
+	public void setRED_Asset_Transfer_Line_UU (String RED_Asset_Transfer_Line_UU);
+
+	/** Get RED_Asset_Transfer_Line_UU	  */
+	public String getRED_Asset_Transfer_Line_UU();
 
     /** Column name Updated */
     public static final String COLUMNNAME_Updated = "Updated";

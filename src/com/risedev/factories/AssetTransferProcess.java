@@ -1,4 +1,4 @@
-package com.risedev.factory;
+package com.risedev.factories;
 
 import org.adempiere.base.IProcessFactory;
 import org.compiere.process.ProcessCall;
